@@ -226,19 +226,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url("/IMG_0364.png");
+    background-image: url("/IMG_0364.jpg");
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("/IMG_0367.png");
+    background-image: url("/IMG_0367.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/IMG_0366.png");
+    background-image: url("/IMG_0366.jpg");
     min-height: 400px;
 }
 

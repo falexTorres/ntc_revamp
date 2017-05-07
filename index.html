@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<title>NTC Consulting - Fredericksburg, TX</title>
-<meta name="description" content="Assisting small businesses in the Texas Hill Country since 2016. A consulting agency with broad knowledge in business strategy and tech...">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<meta charset="UTF-8"/>
+	<title>NTC Consulting - Fredericksburg, TX</title>
+	<meta name="description" content="Assisting small businesses in the Texas Hill Country since 2016. A consulting agency with broad knowledge in business strategy and tech..."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="shortcut icon" href="/icon/favicon.ico"/>
+	<link rel="stylesheet" href="/w3.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="/animate.min.css"/>
+</head>
 <body>
-
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top animated bounceInUp">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
+      <i class="fa fa-angle-double-down"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> <span class="w3-hide-small">HOME</span><span class="w3-hide-large w3-hide-medium">NTC <i>Consulting</i></span></a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SHOWCASE</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-diamond w3-hide-large w3-hide-medium"></i><i class="fa fa-university w3-hide-small"></i><span class="w3-hide-small"> HOME</span><span class="w3-hide-large w3-hide-medium"> NTC <i>Consulting</i></span></a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-database"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-briefcase"></i> SHOWCASE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-comments"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      NTC <i>Consulting</i>
+      <i class="fa fa-diamond"></i> NTC <i>Consulting</i>
     </a>
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide-large w3-hide-medium animated w3-hide " style="position: absolute; z-index: -1; width: 100%;">
+    <a href="#" id="HomeButton"class="w3-bar-item w3-button animated" onclick="toggleFunction();">HOME</a>
+    <a href="#about" id="AboutButton" class="w3-bar-item w3-button animated" onclick="toggleFunction();">ABOUT</a>
+    <a href="#portfolio" id="PortfolioButton" class="w3-bar-item w3-button animated" onclick="toggleFunction();">PORTFOLIO</a>
+    <a href="#contact" id="ContactButton" class="w3-bar-item w3-button animated" onclick="toggleFunction();">CONTACT</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="bgimg-1 w3-display-container w3-opacity-min animated pulse flash" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity title-text">SOCIAL</div>
     <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity title-text">MEDIA</div>
-    <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity title-text">and</div>
+    <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity title-text"><em>and</em></div>
     <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity title-text">ENTERPRISE</div>
     <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity title-text">SOFTWARE</div>
   </div>
@@ -47,56 +50,100 @@
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT US</h3>
-  <p class="w3-center"><em>Strategy and Technology</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<br/>
+  <h5 class="w3-center"><em>Why NTC?</em></h5>
+  <p>
+		You have built your business from the ground up. You missed sleep, meals, and unfortunately memories with the ones you love but success requires sacrifice. What if you didn't have to do it alone? What if Daily tasks could be solved simply by modern software? What if there was someone who could take care of things like Facebook, your website, or even marketing entirely?  Leaving you to what made you a success in the first place. 
+	</p>
+	<hr/>
+	<div class="w3-row" style="margin-bottom: -2%;">
+		<div class="w3-col m4 l4 s12">
+			<h5 class="w3-center"><em>Social Media Marketing</em></h5>
+			<p>
+				At NTC Consulting we take a modern approach to marketing small business by focusing our efforts on social media . We work closely with each of our clients through frequent consultation to build a "post schedule". The "post schedule" is a week to week plan of short video and graphic advertisements designed to target specific demographics with specific messages reflecting previous consultations. We produce new content weekly as well as back each post with our own strategies for achieving maximum organic reach. 
+			</p>
+		</div>
+		<div class="w3-col m4 l4 s12" style="padding-top:3.5%;">
+			<div class="w3-row" style="font-size:3.5rem;margin-top:0%;margin-bottom:2%;">
+				<div class="w3-col s4 m4 l4 w3-center">
+					<i style="color:#425f9c;" class="fa fa-facebook-f"></i>
+				</div>
+				<div class="w3-col m4 l4 s4 w3-center">
+					<span style="font-size:2.5rem;color:gray;"> + </span>
+				</div>
+				<div class="w3-col s4 m4 l4 w3-center">
+					<i style="color:rgba(244,54,54,0.85);" class="fa fa-pied-piper"></i> 
+				</div>
+			</div>
+			<p class="w3-center" style="color:gray;font-size:2.5rem;margin-top:0%;margin-bottom:0%;"><i class="fa fa-arrow-down"></i></p>
+			<p class="w3-center" style="color:#4caf50;margin-top:-10%;margin-bottom:-10%;font-size:8rem;"><i class="fa fa-line-chart"></i></p>
+		</div>
+		<div class="w3-col m4 l4 s12">
+			<h5 class="w3-center"><em>Enterprise Software</em></h5>
+			<p>
+				If you have lost touch with the rapidly changing landscape of modern technology then chances are you working too hard in your daily efforts running your business. NTC Consulting can not only recommend and train you on existing business software, we can start to finish create custom software to fit your individual needs. This includes 100% custom websites and mobile apps. We offer you a bridge to the modern age. 
+			</p>
+		</div>
+		<div class="w3-col m12 l12 s12" style="margin-top: -3%;">
+			<hr/>
+			<h6 class="w3-center"><b>We do more than consult, we connect with people.</b></h6>
+			<hr/>
+		</div>
+	</div>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-handshake-o w3-margin-right"></i>Zach Clark - Marketing</b></p><br>
-      <p><b><i class="fa fa-usd w3-margin-right"></i>Daniel Nguyen - Finance</b></p><br>
-      <p><b><i class="fa fa-microchip w3-margin-right"></i>Alex Torres - Technology</b></p><br>
-      <img src="/IMG_0365.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img onclick="onClick(this);" src="/daniel-ntc-img.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Daniel Nguyen - Finance" width="250" height="166">
+      <p><i class="fa fa-usd w3-margin-right"></i>Daniel <b>Nguyen</b> - <i>Finance</i></p><br>
+    </div>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img onclick="onClick(this);" src="/alex-ntc-img.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Alex Torres - Technology" width="166" height="111">
+      <p><i class="fa fa-microchip w3-margin-right"></i>Alex <b>Torres</b> - <i>Technology</i></p><br>
+    </div>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img onclick="onClick(this);" src="/zach-ntc-img.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Zach Clark - Marketing" width="250" height="166">
+      <p><i class="fa fa-handshake-o w3-margin-right"></i>Zach <b>Clark</b> - <i>Marketing</i></p><br>
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<hr class="w3-hide-medium w3-hide-large"/>
+    <div class="w3-col m6 s12 l6 w3-padding-large">
+			<h3>SERVICES</h3>
+      <p>
+				We offer a wide variety of marketing and enterprise services including social media advertising, website construction and hosting, mobile and desktop app development, business strategy development, and even custom technological solutions targeted for your specific need(s).
+			</p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  <p class="w3-large w3-center w3-padding-16">WHAT CAN WE DO FOR YOU?</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>     Social Media Management and Advertising</p>
+  <div class="w3-dark-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%;background:linear-gradient(141deg, #616161 0%, #8a6778 51%, #616161 75%);"><p><i class="fa fa-camera"></i>     Schedule Periodic Posts</p></div>
   </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>     Strategy and Process Consulting</p>
+  <div class="w3-dark-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%;background:linear-gradient(141deg, #616161 0%, #8a6778 51%, #616161 75%);"><p><i class="fa fa-photo"></i>     Devise a "Plan of Action"</p></div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>     Software Development and Web Hosting</p>
+  <div class="w3-dark-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%;background:linear-gradient(141deg, #616161 0%, #8a6778 51%, #616161 75%);"><p><i class="fa fa-laptop"></i>     Make Your Business Life Easier</p></div>
   </div>
 </div>
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
+    <span class="w3-xlarge">4+</span><br>
+    Websites Hosted
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
+    <span class="w3-xlarge">5+</span><br>
+    Contracted Custom Software
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
+    <span class="w3-xlarge">7+</span><br>
+    Social Media Accounts Managed
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
+    <span class="w3-xlarge">12+</span><br>
+    Consulted Customers
   </div>
 </div>
 
@@ -182,7 +229,7 @@
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">WHERE WE'RE LOCATED</h3>
-  <p class="w3-center"><em>Get in Touch Today!</em></p>
+  <p class="w3-center"><em>Feel free to reach out at any time of the day or night.</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
@@ -200,20 +247,51 @@
 </div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#" class="w3-button w3-light-grey" onclick="window.location.reload()"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="http://facebook.com/pedernalesbrewingcompany"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="http://instagram.com/pedernalesbrewingcompany"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <!--<i class="fa fa-snapchat w3-hover-opacity"></i>-->
+    <!--<i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+    <a href="http://twitter.com/twistedsistersbakeshop"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <!--<i class="fa fa-linkedin w3-hover-opacity"></i>-->
   </div>
-  <p>Powered by <a class="w3-hover-text-green">NTC Consulting</a></p>
+  <p>Powered by <span class="w3-text-green" onclick="toggleFunction(); window.location.assign('#');">NTC Consulting</a></p>
 </footer>
  
 <!-- Add Google Maps -->
 <script>
+var AnimationStartListeners = {
+	add: function (callback) {
+		this.addEventListener("webkitAnimationEnd", callback, true);
+		this.addEventListener("mozAnimationEnd", callback, true);
+		this.addEventListener("MSAnimationEnd", callback, true);
+		this.addEventListener("oanimationEnd", callback, true);
+		this.addEventListener("animationEnd", callback, true);
+	}
+};
+
+/*AnimationStartListeners.add.call(document.getElementById('HomeButton'), function() {
+	// start about button animation
+	document.getElementById('AboutButton').className = "w3-bar-item w3-button animated fadeInUp";	
+}, false);
+AnimationStartListeners.add.call(document.getElementById('AboutButton'), function() {
+	document.getElementById('PortfolioButton').className = "w3-bar-item w3-button animated fadeInUp";	
+}, false);*/
+AnimationStartListeners.add.call(document.getElementById('ContactButton'), function() {
+	document.getElementById('HomeButton').className = "w3-bar-item w3-button";
+	document.getElementById('AboutButton').className = "w3-bar-item w3-button";	
+	document.getElementById('PortfolioButton').className = "w3-bar-item w3-button";	
+	document.getElementById('ContactButton').className = "w3-bar-item w3-button";	
+});
+AnimationStartListeners.add.call(document.getElementById('navDemo'), function() {
+	document.getElementById('HomeButton').className = "w3-bar-item w3-button animated jello";
+	document.getElementById('AboutButton').className = "w3-bar-item w3-button animated jello";	
+	document.getElementById('PortfolioButton').className = "w3-bar-item w3-button animated jello";	
+	document.getElementById('ContactButton').className = "w3-bar-item w3-button animated jello";	
+}, true);
+
+
 function myMap() {
   myCenter=new google.maps.LatLng(30.2752105, -98.872629);
   var mapOptions= {
@@ -244,25 +322,45 @@ function myFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
     } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace("w3-card-2 w3-animate-top w3-white", "");
     }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
+var toggleFunction = (function() {
+		this.className += " w3-disabled"
     var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+		return function() {
+			function removeAL(e) {
+				console.log(e.type);
+				e.target.removeEventListener("webkitAnimationEnd", hide);
+				e.target.removeEventListener("mozAnimationEnd", hide);
+				e.target.removeEventListener("MSAnimationEnd", hide);
+				e.target.removeEventListener("oanimationend", hide);
+				e.target.removeEventListener("animationend", hide);
+			}
+			function hide(e){e.target.className+=" w3-hide ";removeAL(e);}
+			x.className = x.className.replace(" bounceInDown", "");
+			x.className = x.className.replace(" bounceOutUp", "");
+			if (x.className.indexOf(" w3-hide ") == -1) {
+				x.addEventListener("webkitAnimationEnd", hide);
+				x.addEventListener("mozAnimationEnd", hide);
+				x.addEventListener("MSAnimationEnd", hide);
+				x.addEventListener("oanimationend", hide);
+				x.addEventListener("animationend", hide);
+				x.className += " bounceOutUp";
+			} else {
+				x.className = x.className.replace(" w3-hide ", "");
+				x.className += " bounceInDown";
+			}
+			x.className = x.className.replace(" w3-disabled", "");
+		};
+})();
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3rww0fcowwykP4YwRldQtv-SO6v-zJVE&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
-
 </body>
 </html>
